@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Estilo/style.css">
+    <title>Reserva - Chalé Hotel</title>
+</head>
+<body>
+    <!--inicio container-->
+   <div id="container">
+        <!--inicio topo-->
+        <div id="topo">
+            <!--inicio logo-->
+            <div id="arealogo">
+                <h1 class="logo">
+                    <a href="#">Chalé Hotel</a>
+                </h1>
+            </div><!--fim logo-->
+
+            <!--inicio menu-->
+            <div id="areamenu">
+                <!--inicio conteudo-->
+                <div id="conteudo">
+                    <div id="locais">
+                        <span class="local">
+                            Rio de janeiro - São Paulo - Belo Horizonte
+                        </span>
+                        <a class="reserva" href="#">Reservar</a>
+                        <div style="clear: both;" ></div>
+                    </div>
+                    <!--inicio menu-->
+                    <div id="menu">
+                        <ul id="navegacao">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gastronomia.html">Gastronomia</a></li>
+                            <li><a href="ambiente.html">Ambiente</a></li>
+                            <li><a href="reservas.html">Reserva</a></li>
+                        </ul>
+                        <img class="depoimento" src="imagens/depoimento.png" alt="">
+                    </div> <!--inicio menu-->
+
+                </div> <!--fim conteudo-->
+            </div><!--fim menu-->
+
+        </div><!--fim topo-->
+
+        <!--inicio principal-->
+        <div id="principal">
+            <div class="conteudoprincipal">
+                <!--inicio conteudo principal-->
+                <div class="conteudoprincipal">
+                    <h2>
+                        Depoimentos
+                    </h2>
+                    <ul id="">
+                        <li> 
+                            <img class="imgdepoimento" src="imagens/apartamento.jpg" alt="Depoimento" width="300" >
+                            <h3>Pessoa1</h3>
+                            <p>
+                                Mussum Ipsum, cacilds vidis litro abertis.
+                                Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. 
+                                Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+
+                            </p>
+                        
+                    </li>
+                    <li> 
+                        <img class="imgdepoimento" src="imagens/restaurante.jpg" alt="Depoimento1" width="300" >
+                        <h3>Pessoa2</h3>
+                        <p>
+                            Mussum Ipsum, cacilds vidis litro abertis.
+                            Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. 
+                            Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+                        </p>
+                     
+                </li>
+                <li> 
+                    <img class="imgdepoimento" src="imagens/piscina.jpg" alt="Depoimento2" width="300" >
+                    <h3>Pessoa3</h3>
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis.
+                        Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. 
+                        Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+                    </p>
+                 
+            </li>
+                    </ul>
+                </div>
+                <!--fim conteudo principal-->
+            </div>
+        </div>
+        <!--Fim principal-->
+                <!--inicio lateral-->
+                <div id="lateral">
+                    <div class="conteudoprincipal">
+                        <h2>
+                            Reserve seu Quarto Aqui
+                        </h2>
+                        <form method="post"  action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
+                            <fieldset>
+                            <legend >Identificação do Usuário</legend>
+                           <p><label for="cNome"> Nome: </label><input type="text" name="tNome"  size="20" maxlength="8" placeholder="Nome Completo"> </p>
+                            <p><label for="cSenha">Senha: </label><input type="password" name="tSenha" size="8" maxlength="8" placeholder="8 Dígitos"></p>
+                            <p><label>E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail"></p>
+                            <fieldset id="sexo"><legend>Sexo:</legend>
+                                <input type="radio" name="tSexo" > <label for="cMasc">Masculino</label> <br>
+                                <input type="radio" name="tSexo" > <label for="cFem">Feminino</fieldset></label>
+                            <p><label>Data de Nascimento:</label></p> <input type="date" name="tNasc" >
+                          </fieldset>
+                          <fieldset >
+                        <legend>Endereço do Usuário</legend>
+                           <p> <label for="cRua">Logradouro:</label>
+                            <input type="text" name="tRua"  size="13" maxlength="80" placeholder="Rua,Av,Travessa"> </p>
+                            <p><label for="cNum"> Número: </label>
+                              <input type="number" name="tNum" ></p>
+                            <p><label for="cEst">Estado:</label>
+                             <select name="tEs">
+                             <option value="SP">São Paulo</option>
+                             <option value="MG">Belo Horizonte</option>
+                             <option value="RJ">Rio de Janeiro</option>  
+                            </select></p>
+                            <p><label for="cCid">Cidade:</label>
+                              <input type="text" name="tCid"  size="13" maxlength="80" placeholder="Sua Cidade"></p>
+                            </fieldset>
+                            <fieldset >
+                        <legend>Mensagem do Usuário</legend>
+                            <p><label ></label>
+                              <textarea name="tMsg"  cols="35" rows="5" placeholder="Deixe Aqui sua Mensagem!"></textarea></p>
+                            </fieldset>
+                        
+                        <fieldset>
+                        <legend>Quero Reservar um Quarto</legend>
+                            
+                            
+                            <p><label for="cQtd">Quantidade de Pessoas:</label>
+                              <input type="number" name="tQtd"  min="0" max="5" value="0"></p>
+                            <p><label for="cTot">Preço Total: R$</label>
+                              <input type="text" name="tTot" placeholder="Total a Pagar" readonly=""></p>
+                            </fieldset>
+                        
+                        
+                            <input type="button" value="Enviar">
+                        
+                        </form>
+                    </div>
+                </div>
+                <!--Fim lateral-->
+                <div id="rodape">
+                    <span>&copy Copyright 2000-2021 Chalé Hotel</span>
+                </div>
+   </div><!--fim container-->
+</body>
+</html>
